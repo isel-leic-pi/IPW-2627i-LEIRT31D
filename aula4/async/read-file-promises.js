@@ -9,11 +9,21 @@
 
 import fs from 'node:fs/promises'
 
-const readPromise = fs.readFile("file1.txt")
-console.log(readPromise)
 
-readPromise
-    .then(data => console.log(data))
-    .catch(error => console.log("ERROR",error))
-    
-console.log("DONE REALLY?")
+function readFile1txt(){
+    const readPromise = fs.readFile("file1.txt")
+    console.log(readPromise)
+
+    readPromise
+        .then(data => console.log(data))
+        .catch(error => console.log("ERROR",error))
+}
+
+function main(){
+    readFile1txt()
+        .then(()=>console.log("DONE"))
+
+}
+
+main()
+
