@@ -14,7 +14,7 @@ function readFile1txt(){
     const readPromise = fs.readFile("file1.txt")
     console.log(readPromise)
 
-    readPromise
+    return readPromise
         .then(data => console.log(data))
         .catch(error => console.log("ERROR",error))
 }
