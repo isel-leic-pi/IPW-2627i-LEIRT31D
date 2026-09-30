@@ -16,13 +16,14 @@ function readFile1txt(){
 
     return readPromise
         .then(data => console.log(data))
+        .then(() => 5)
+        .then(x => console.log(x))
         .catch(error => console.log("ERROR",error))
-}
+}w
 
 function main(){
     readFile1txt()
         .then(()=>console.log("DONE"))
-
 }
 
 main()
