@@ -1,1 +1,5 @@
 GET https://api.sampleapis.com/movies/animation
+
+###
+
+GET https://api.sampleapis.com/movies/classic
