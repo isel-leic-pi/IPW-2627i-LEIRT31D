@@ -1,0 +1,33 @@
+<html>
+
+    <head>
+        <title>Shopping Lists</title>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <a href="/"> Home </a>
+        <a href="lists"> Lists </a>
+
+        <h1> Shopping Lists </h1>
+
+        <table border="true">
+            <tr>
+                <th>Identifier</th>
+                <th>name</th>
+            </tr>
+            {{#each lists}}
+                <tr>
+                    <td><a href="lists/{{id}}>{{id}}}</a></td>
+                    <td>{{name}}</td>
+            </tr>
+            {{/each}}
+        </table>
+
+
+        <!-- Footer -->
+        <p>ISEL 2026</p>
+
+    </body>
+
+</html>
